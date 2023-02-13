@@ -9,7 +9,7 @@ export const fetchProducts = () => async (dispatch) => {
   });
 };
 
-export const filterProducts = (products, size) => async (dispatch) => {
+export const filterProducts = (products, size) => (dispatch) => {
   dispatch({
     type: FILTER_PRODUCTS_BY_SIZE,
     payload: {
@@ -19,7 +19,7 @@ export const filterProducts = (products, size) => async (dispatch) => {
   });
 };
 
-export const sortProducts = (filteredProducts, sort) => async (dispatch) => {
+export const sortProducts = (filteredProducts, sort) => (dispatch) => {
   const sortedProducts = filteredProducts.slice();
 
   if (sort === 'latest') {
