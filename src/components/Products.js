@@ -4,6 +4,7 @@ import Zoom from 'react-reveal/Zoom';
 import Modal from 'react-modal';
 import { connect } from 'react-redux';
 import { fetchProducts } from '../actions/productActions';
+import { addToCart } from '../actions/cartActions';
 import formatCurrency from '../util';
 
 class Products extends Component {
@@ -97,4 +98,4 @@ class Products extends Component {
   }
 }
 
-export default connect((state) => ({ products: state.products.filteredItems }), { fetchProducts })(Products);
+export default connect((state) => ({ products: state.products.filteredItems }), { addToCart, fetchProducts })(Products);
