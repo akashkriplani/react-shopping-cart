@@ -16,7 +16,7 @@ You may also see any lint errors in the console.
 
 ### `npm run server`
 
-Runs mongoDB server. It uses a nodemon so that any changes on server will be auto-restarted.
+Runs mongoDB server. It uses a nodemon package so that any changes on server made locally will hot-reload in real time.
 
 ### `npm test`
 
