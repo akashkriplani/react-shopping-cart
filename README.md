@@ -16,7 +16,7 @@ You may also see any lint errors in the console.
 
 ### `npm run server`
 
-Runs mongoDB server. It uses a nodemon package so that any changes on server made locally will hot-reload in real time. The server listens to port 5001 by default.
+Runs mongoDB server. It uses a nodemon package so that any changes on server made locally will hot-reload in real time. The server listens to port 5001 by default. It can run on the port of your choice when the port number is provided via environment variables in the .env file or it is configured in your deployment environment.
 
 ### `npm test`
 
